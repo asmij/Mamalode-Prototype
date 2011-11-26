@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mamalode Prototype</title>
+	
+	<!-- configure it to look and feel like an app, not a web page -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- import jquery, jquery mobile libraries -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+
+	<!-- import our css and js -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+
+	<!-- turn off the iOS overscroll/snap behavior -->
+	<script type="text/javascript">
+		function BlockMove(event) {
+		// Tell Safari not to move the window.
+		event.preventDefault() ;
+		}
+	</script>
+
+</head>
+<body> <!-- ontouchmove="BlockMove(event);" > -->
+<div id="wrapper">
+	<!-- each div of class "page" represents one page of the magazine -->
+	<!-- pages are "turned" by showing/hiding these divs using js -->
+	<div id="1" class="page active">
+		<div class="columnLeft">
+			<h2>STORY ONE</h2>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at magna at quam laoreet tincidunt non sed neque. Sed quis enim et mauris convallis interdum. Morbi vitae leo eros. Nulla vel ipsum metus. Aenean blandit luctus felis ac cursus. Phasellus feugiat erat vel libero eleifend quis dictum lacus suscipit. Sed consectetur ligula ac turpis euismod dignissim. Suspendisse lorem nibh, euismod tempus vestibulum in, ultricies vel augue.</p>
+
+			<p>Fusce fermentum turpis sed felis pulvinar faucibus. Nulla tempor rhoncus rutrum. Cras tincidunt ligula eget massa tincidunt pharetra. Phasellus quis sapien varius mauris imperdiet vehicula. Nunc in felis vitae odio pellentesque suscipit. Phasellus gravida aliquam sem, in aliquam urna rhoncus facilisis.</p>
+
+			<h2>STORY TWO</h2>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at magna at quam laoreet tincidunt non sed neque. Sed quis enim et mauris convallis interdum. Morbi vitae leo eros. Nulla vel ipsum metus. Aenean blandit luctus felis ac cursus. Phasellus feugiat erat vel libero eleifend quis dictum lacus suscipit. Sed consectetur ligula ac turpis euismod dignissim. Suspendisse lorem nibh, euismod tempus vestibulum in, ultricies vel augue. Fusce fermentum turpis sed felis pulvinar faucibus. Nulla tempor rhoncus rutrum. Cras tincidunt ligula eget massa tincidunt pharetra. Phasellus quis sapien varius mauris imperdiet vehicula. Nunc in felis vitae odio pellentesque suscipit.</p>
+		</div>
+		<div class="columnRight">
+			<h2>STORY THREE</h2>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at magna at quam laoreet tincidunt non sed neque. Sed quis enim et mauris convallis interdum. Morbi vitae leo eros. Nulla vel ipsum metus. Aenean blandit luctus felis ac cursus.</p>
+
+			<p>Phasellus feugiat erat vel libero eleifend quis dictum lacus suscipit. Sed consectetur ligula ac turpis euismod dignissim. Suspendisse lorem nibh, euismod tempus vestibulum in, ultricies vel augue.</p>
+
+			<p>Fusce fermentum turpis sed felis pulvinar faucibus. Nulla tempor rhoncus rutrum. Cras tincidunt ligula eget massa tincidunt pharetra. Phasellus quis sapien varius mauris imperdiet vehicula. Nunc in felis vitae odio pellentesque suscipit.</p>
+
+			<p>Phasellus gravida aliquam sem, in aliquam urna rhoncus facilisis. Morbi nec erat ut dolor tincidunt ornare. Proin auctor felis vitae dui mattis at sodales ligula bibendum. Nunc ultrices, eros id varius gravida, tellus arcu ultricies diam, at ultrices sapien odio et neque. Morbi non tempus neque.</p>
+
+			<h2>STORY FOUR</h2>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+			<p>Suspendisse at magna at quam laoreet tincidunt non sed neque.</p>
+
+			<p>Sed quis enim et mauris convallis interdum.</p>
+
+			<p>Morbi vitae leo eros. Nulla vel ipsum metus. Aenean blandit luctus felis ac cursus.</p>
+		</div>
+		
+		<div class="footer">
+			<div class="articleTitle">because i said so</div>
+		</div>
+
+		<div class="pageNum">page 1</div>
+	</div>
+
+	<!-- Page 2 -->
+	<div id="2" class="page">
+		<div class="columnLeft">
+			<h2>STORY FIVE</h2>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at magna at quam laoreet tincidunt non sed neque. Sed quis enim et mauris convallis interdum. Morbi vitae leo eros. Nulla vel ipsum metus. Aenean blandit luctus felis ac cursus.</p>
+
+			<p>Phasellus feugiat erat vel libero eleifend quis dictum lacus suscipit. Sed consectetur ligula ac turpis euismod dignissim. Suspendisse lorem nibh, euismod tempus vestibulum in, ultricies vel augue.</p>
+
+			<p>Fusce fermentum turpis sed felis pulvinar faucibus. Nulla tempor rhoncus rutrum. Cras tincidunt ligula eget massa tincidunt pharetra. Phasellus quis sapien varius mauris imperdiet vehicula. Nunc in felis vitae odio pellentesque suscipit.</p>
+
+			<p>Phasellus gravida aliquam sem, in aliquam urna rhoncus facilisis. Morbi nec erat ut dolor tincidunt ornare. Proin auctor felis vitae dui mattis at sodales ligula bibendum. Nunc ultrices, eros id varius gravida, tellus arcu ultricies diam, at ultrices sapien odio et neque. Morbi non tempus neque.</p>
+
+			<h2>STORY SIX</h2>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+			<p>Suspendisse at magna at quam laoreet tincidunt non sed neque.</p>
+
+			<p>Sed quis enim et mauris convallis interdum.</p>
+
+			<p>Morbi vitae leo eros. Nulla vel ipsum metus. Aenean blandit luctus felis ac cursus.</p>
+		</div>
+
+		<div class="columnRight">
+			<h2>STORY SEVEN</h2>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at magna at quam laoreet tincidunt non sed neque. Sed quis enim et mauris convallis interdum. Morbi vitae leo eros. Nulla vel ipsum metus. Aenean blandit luctus felis ac cursus. Phasellus feugiat erat vel libero eleifend quis dictum lacus suscipit. Sed consectetur ligula ac turpis euismod dignissim. Suspendisse lorem nibh, euismod tempus vestibulum in, ultricies vel augue.</p>
+
+			<p>Fusce fermentum turpis sed felis pulvinar faucibus. Nulla tempor rhoncus rutrum. Cras tincidunt ligula eget massa tincidunt pharetra. Phasellus quis sapien varius mauris imperdiet vehicula. Nunc in felis vitae odio pellentesque suscipit. Phasellus gravida aliquam sem, in aliquam urna rhoncus facilisis.</p>
+
+			<h2>STORY EIGHT</h2>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at magna at quam laoreet tincidunt non sed neque. Sed quis enim et mauris convallis interdum. Morbi vitae leo eros. Nulla vel ipsum metus. Aenean blandit luctus felis ac cursus. Phasellus feugiat erat vel libero eleifend quis dictum lacus suscipit. Sed consectetur ligula ac turpis euismod dignissim. Suspendisse lorem nibh, euismod tempus vestibulum in, ultricies vel augue. Fusce fermentum turpis sed felis pulvinar faucibus. Nulla tempor rhoncus rutrum. Cras tincidunt ligula eget massa tincidunt pharetra. Phasellus quis sapien varius mauris imperdiet vehicula. Nunc in felis vitae odio pellentesque suscipit.</p>
+		</div>
+
+		<div class="pageNum">page 2</div>
+	</div>
+	
+	<!-- Page 3 -->
+	<div id="3" class="page">
+		<div class="columnLeft">
+			<h2>STORY NINE</h2>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+			<p>Suspendisse at magna at quam laoreet tincidunt non sed neque.</p>
+
+			<p>Sed quis enim et mauris convallis interdum.</p>
+
+			<p>Morbi vitae leo eros. Nulla vel ipsum metus. Aenean blandit luctus felis ac cursus.</p>
+			
+			<h2>STORY TEN</h2>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at magna at quam laoreet tincidunt non sed neque. Sed quis enim et mauris convallis interdum. Morbi vitae leo eros. Nulla vel ipsum metus. Aenean blandit luctus felis ac cursus.</p>
+
+			<p>Phasellus feugiat erat vel libero eleifend quis dictum lacus suscipit. Sed consectetur ligula ac turpis euismod dignissim. Suspendisse lorem nibh, euismod tempus vestibulum in, ultricies vel augue.</p>
+
+			<p>Fusce fermentum turpis sed felis pulvinar faucibus. Nulla tempor rhoncus rutrum. Cras tincidunt ligula eget massa tincidunt pharetra. Phasellus quis sapien varius mauris imperdiet vehicula. Nunc in felis vitae odio pellentesque suscipit.</p>
+
+			<p>Phasellus gravida aliquam sem, in aliquam urna rhoncus facilisis. Morbi nec erat ut dolor tincidunt ornare. Proin auctor felis vitae dui mattis at sodales ligula bibendum. Nunc ultrices, eros id varius gravida, tellus arcu ultricies diam, at ultrices sapien odio et neque. Morbi non tempus neque.</p>
+		</div>
+
+		<div class="columnRight">
+			<h2>STORY ELEVEN</h2>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at magna at quam laoreet tincidunt non sed neque. Sed quis enim et mauris convallis interdum. Morbi vitae leo eros. Nulla vel ipsum metus. Aenean blandit luctus felis ac cursus.</p>
+
+			<p>Phasellus feugiat erat vel libero eleifend quis dictum lacus suscipit. Sed consectetur ligula ac turpis euismod dignissim. Suspendisse lorem nibh, euismod tempus vestibulum in, ultricies vel augue.</p>
+
+			<p>Fusce fermentum turpis sed felis pulvinar faucibus. Nulla tempor rhoncus rutrum. Cras tincidunt ligula eget massa tincidunt pharetra. Phasellus quis sapien varius mauris imperdiet vehicula. Nunc in felis vitae odio pellentesque suscipit.</p>
+
+			<p>Phasellus gravida aliquam sem, in aliquam urna rhoncus facilisis. Morbi nec erat ut dolor tincidunt ornare. Proin auctor felis vitae dui mattis at sodales ligula bibendum. Nunc ultrices, eros id varius gravida, tellus arcu ultricies diam, at ultrices sapien odio et neque. Morbi non tempus neque.</p>
+
+			<h2>STORY TWELVE</h2>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+			<p>Suspendisse at magna at quam laoreet tincidunt non sed neque.</p>
+
+			<p>Sed quis enim et mauris convallis interdum.</p>
+
+			<p>Morbi vitae leo eros. Nulla vel ipsum metus. Aenean blandit luctus felis ac cursus.</p>
+		</div>
+
+		<div class="pageNum">page 3</div>
+	</div>
+
+	<!-- this is where bookmarks go -->
+	<!-- dogears are hidden by default, shown on tap via js -->
+	<div class="bookmark"></div>
+
+	<!-- this is the top menu bar -->
+	<!-- menu bar is hidden by default, shown on tap via js -->
+	<div id="menubar">
+		This is the menu bar!
+
+		<!-- this is the table of contents -->
+		<!-- the TOC is a child of "menubar" so that we can use CSS positioning on it -->
+		<div id="toc">
+		</div>
+	</div>
+</div>
+</body>
+</html>
