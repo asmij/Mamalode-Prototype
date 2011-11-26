@@ -1,0 +1,225 @@
+/* Main CSS file */
+
+/** GENERAL **/
+html {
+	font-family: sans-serif;
+	font-size: 12pt;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper {
+	margin: 0;
+	padding: 2px;
+	height: 1020px; /* Conform to the iPad's size */
+	width: 764px;
+	border: 1px solid black;
+	overflow: hidden;
+	position: relative;
+}
+
+.ui-loader {
+	display: none; /* Remove the jquery mobile loading message */
+}
+
+/** PAGES **/
+.page {
+	margin: 0;
+	padding: 50px;
+	font-size: 11pt;
+	overflow: hidden;
+	background: white;
+	display: none;
+}
+
+.active {
+	display: block;
+}
+
+.page h2 {
+	color: #DE00C4;
+	margin-bottom: -10px;
+}
+
+.footer {
+	clear: both;
+	position: relative;
+	overflow: hidden;
+}
+
+.articleTitle {
+	float: left;
+	color: red;
+	font-family: serif;
+	font-size: 80px;
+}
+
+.pageNum {
+	font-size: 14pt;
+	color: rgb(170,170,170);
+	white-space: nowrap;
+	position: absolute;
+	right: 30px;
+	bottom: 25px;
+}
+
+.columnLeft {
+	width: 300px;
+	float: left;
+}
+
+.columnRight {
+	width: 300px;
+	float: right;
+}
+
+/** MENU **/
+.menubar {
+	/*display: none;*/
+	
+	margin: 0px;
+	padding: 2px;
+	height: 1020px; /* Conform to the iPad's size */
+	width: 200px;
+	overflow: hidden;
+	position: absolute;
+	left: 10px; 
+	background-color: #D3D3D3;
+}
+ 
+ 
+/** Menu Bar Contents **/
+.menubarContents {
+ 	width: 100%;
+ 	float: left;
+ 	top: 200px;
+ 	position: absolute;
+ 	text-align: center;
+ 	padding: 2px;
+ 	margin: 0px;
+
+}
+
+.menubarContents h1 {
+ 	color: #FFFFFF;
+ 	font-weight: bold;
+ 	font-size: 18px;
+ }
+
+.mamasays {	
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	padding: 2px;
+	background-color: #FFD700;
+}
+
+.biss {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	padding: 2px;
+	background-color: #ADD8E6;
+}
+
+.expressions {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	padding: 2px;
+	background-color: #DC143C;
+}
+
+/** Scroll Menu **/
+.scrollmenu {
+	/*display: none;*/
+	
+	margin: 0px;
+	padding: 2px;
+	height: 1020px; /* Conform to the iPad's size */
+	width: 200px;
+	overflow: auto;
+	position: relative;
+	left: 200px; 
+	background-color: #D3D3D3;
+}
+
+/** Scroll Menu Contents **/
+
+.scrollmenuContents {
+	width: 100%;
+	position: absolute;
+	top: 0px;
+}
+
+
+.article {
+	width: 100%;
+	height: 200px;
+	background-color: #483D8B; 	
+}
+
+#article1 {
+	
+}
+
+#mamasays1 {
+    position: absolute;	
+    padding: 0px;
+	height: 25px;
+	top: 200px;
+}
+
+#article2 {
+	position: absolute;
+	top: 225px;
+}
+
+#mamasays2 {
+	position: absolute;
+	padding: 0px;
+	height: 25px;
+	top: 425px;
+}
+
+#article3 {
+	position: absolute;
+	top: 450px;
+}
+
+#biss1 {
+	position: absolute;
+	padding: 0px;
+	height: 25px;
+	top: 650px;
+}
+
+#article4 {
+	position: absolute;
+	top: 675px;
+}
+
+#expressions1 {
+	position: absolute;
+	padding: 0px;
+	height: 25px;
+	top: 875px;
+}
+
+#article5 {
+	position: absolute;
+	top: 900px;
+}
+
+#expressions2 {
+	position: absolute;
+	padding: 0px;
+	height: 25px;
+	top:1100px;
+}
+
+
+ 
